@@ -33,7 +33,7 @@ async function handleData() {
     if (ipAddress === "") {
       ipInfo.classList.remove("flex");
       ipInfo.classList.add("hidden");
-      ipAddress = "8.8.8.8";
+      // ipAddress = "8.8.8.8";
     } else {
       ipInfo.classList.remove("hidden");
       ipInfo.classList.add("flex");
