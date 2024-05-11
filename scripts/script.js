@@ -44,9 +44,15 @@ async function handleData() {
     ipTime.innerHTML = `UTC ${timezone}`;
     ipISP.innerText = `${isp}`;
 
+    if(ipAddress==="")
+    {
+      var marker = L.marker([51.5, -0.09]).addTo(map);
+      mp.setView([51.505, -0.09], 13);
+    }else{
     var marker = L.marker([lat, lng]).addTo(map);
-
     map.setView([lat, lng], 13);
+    }
+    
 
     // marker.bindPopup("Curr.").openPopup();
   }
