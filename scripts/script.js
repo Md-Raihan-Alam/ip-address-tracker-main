@@ -1,4 +1,4 @@
-var map = L.map("map").setView([0, 0], 13);
+var map = L.map('map').setView([51.505, -0.09], 13);
 let ipInfo = document.querySelector("#ipInfo");
 let ipTarget = document.querySelector("#ipTarget");
 let ipLocation = document.querySelector("#ipLocation");
